@@ -1,6 +1,6 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a basic Flash card demo based on custom directive [Ionic](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+## Basic Component
 
 
 We create a basic flash card component 
