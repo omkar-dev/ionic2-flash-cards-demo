@@ -2,24 +2,59 @@ This is a starter template for [Ionic](http://ionicframework.com/docs/) projects
 
 ## How to use this template
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+We create a basic flash card component 
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
+<flash-card>
+ 
+    <div class="flash-card-front">FLASH CARDS</div>
+ 
+    <div class="flash-card-back">ARE COOL</div>
+ 
+</flash-card>
 ```
 
-Then, to run it, cd into `myTabs` and run:
+Css for flipping
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+  .flipper {
+            transition: 0.6s;
+            transform-style: preserve-3d;
+ 
+            position: relative;
+        }
+        
+        
+    .front, .back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ecf0f1;
+            backface-visibility: hidden;
+            -webkit-box-shadow: 0px 8px 4px -4px rgba(163,163,163,0.25);
+            -moz-box-shadow: 0px 8px 4px -4px rgba(163,163,163,0.25);
+            box-shadow: 0px 8px 4px -4px rgba(163,163,163,0.25);
+            border: 1px solid #dee2e3;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        
+        
+              .front {
+            z-index: 2;
+            /* for firefox 31 */
+            transform: rotateY(0deg);
+        }
+        
+        
+        
+         .back {
+            transform: rotateY(180deg);
+        }
 ```
 
 Substitute ios for android if not on a Mac.
