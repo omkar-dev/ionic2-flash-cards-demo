@@ -59,3 +59,10 @@ Css for flipping
 
 Substitute ios for android if not on a Mac.
 
+
+
+
+example:
+
+
+(https://github.com/omkar-dev/ionic2-flash-cards-demo/blob/master/src/assets/flash-card-gif-2.gif)
