@@ -1,4 +1,4 @@
-This is a basic Flash card demo based on custom directive [Ionic](http://ionicframework.com/docs/) projects.
+This is a basic Flash card demo based on custom directive [Ionic](http://ionicframework.com/docs/) projects. credits to josh morony original idea .This is a remake tutorial for purpose of learning only.
 
 ## Basic Component
 
